@@ -1,13 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="flex justify-around  py-[10px] text-white">
+        <div>
+            <img src="./sobir-img/718281.png" alt="" class="w-[200px]">
+        </div>
+        <div class="md:flex gap-[40px] xs:hidden">
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">About </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">Gallery</p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">Pricing </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer"> FAQ </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer"> Benefits</p>
+            <div class="my-auto">
+                <button
+                    class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                    See more
+                </button>
+            </div>
+        </div>
+        <div class="xs:flex gap-[30px] md:hidden">
+            <div class="my-auto">
+                <button
+                    class="w-[100px] bg-[#6966FF] bg-gradient-to-br from-pink-800 to-purple-500 text-white p-[6px] rounded-lg">Apply</button>
+            </div>
+            <div class="my-auto text-[30px]">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <img src="./sobir-img/клв1.jpg" alt="" class="absolute -z-10 xs:h-[450px] md:h-[400px] w-[100%] mt-[30px]">
+    <div class="text-center my-[30px] md:py-[55px] xs:py-[20px] bg-[#2b1ea75b]">
+        <h1 class="font-bold text-[25px] my-[10px]">This website helps you buy high-quality computers at affordable
+            prices!</h1>
+        <p>We offer everything you need to find the perfect computer for your needs:</p>
+        <h1 class="font-bold text-[25px] my-[10px]">Our Products:</h1>
+        <p>💻 Laptops – From budget-friendly models to powerful gaming rigs</p>
+        <p>🖱️ Accessories – Keyboards, mice, monitors, and more</p>
+        <h1 class="font-bold text-[25px] my-[10px]">Limited-Time Offers!</h1>
+        <p>🎁 Exclusive Discounts for first-time buyers</p>
+        <p>🔒 100% Satisfaction Guarantee with easy returns</p>
+    </div>
+    <div class="md:flex justify-center gap-[50px]">
+        <div data-aos="zoom-in" class="my-auto">
+            <div>
+                <img src="./sobir-img/images (1).jpg" alt="" class=" w-[500px] rounded-xl bg-black">
+                <h1 class="font-bold mt-[40px] text-[20px] ml-[20px]">Legion 7i (RTX 4080, i9) – 2500–3000$</h1>
+            </div>
+        </div>
+        <div class="md:w-[40%] px-[20px] my-[60px]">
+
+            <div class="text-center my-[20px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Lenovo LEGION Overview</h1>
+                <p class="text-gray-500"> <span class="font-bold text-white">LEGION</span> is Lenovo's premium gaming
+                    brand, offering high-performance laptops, desktops, and accessories designed for gamers, content
+                    creators, and power users.</p>
+            </div>
+            <h1 class="font-bold text-[20px]">🔥 LEGION Product Lineup</h1>
+            <h1 class="font-bold">1. LEGION Laptops</h1>
+            <h1 class="font-bold">LEGION 7 / 7i (Pro)</h1>
+            <p class="text-gray-500">Premium gaming & creator laptops</p>
+            <p class="text-gray-500">Intel Core i9 / AMD Ryzen 9 + RTX 4080/4090</p>
+            <p class="text-gray-500">Mini-LED or OLED displays (up to 240Hz)</p>
+            <p class="text-gray-500">Advanced cooling (vapor chamber)</p>
+            <h1 class="font-bold">LEGION 9i (Flagship)</h1>
+            <p class="text-gray-500">Lenovo’s most powerful laptop</p>
+            <p class="text-gray-500">RTX 4090, mechanical keyboard, liquid cooling</p>
+
+        </div>
+    </div>
+    <div class="md:flex justify-center gap-[40px] my-[30px]">
+        <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[40%] px-[10px]">
+            <div>
+                <img src="./sobir-img/images (2).jpg" alt="" class=" w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class="w-[150px] mx-auto my-[10px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Laptop gaming Lenovo Legion R9000P</h1>
+                <p class="font-bold my-[5px]">✔ Unmatched gaming performance (Highest FPS in AAA titles)</p>
+                <p class="font-bold my-[5px]">✔ Premium build quality with Legion Spectrum RGB lighting</p>
+                <p class="font-bold my-[5px]">✔ Easy-upgrade design for future-proofing</p>
+                <button
+                    class="w-[200px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$3,500</button>
+
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[40%] px-[10px]">
+            <div>
+                <img src="./sobir-img/c08907028.png" alt="" class="w-[60%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class="w-[150px] mx-auto my-[10px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Victus by HP 16.1 inch Gaming Laptop</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p>✔ Processor: Intel Core i5-12450H or AMD Ryzen 5 5600H</p>
+                <p>✔ Graphics: NVIDIA GeForce RTX 3050 (4GB GDDR6)</p>
+                <p>✔ Storage: 512GB NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$800</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="md:flex justify-center">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="md:w-[40%] my-[50px]">
+            <div>
+                <img src="./sobir-img/HP-Omen-16-b0036ur-3.webp" alt="" class="w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class=" my-[10px]">
+                <h1 class="font-bold text-[30px]">HP Omen 16-c0045ur</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p class="">✔ Processor: Intel Core i7-12700H (14 cores, up to 4.7GHz)</p>
+                <p class="">✔ Memory: 16GB DDR5 (upgradable to 32GB)</p>
+                <p class="">✔ Storage: 1TB PCIe NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$1,800</button>
+
+            </div>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="md:w-[40%] my-[50px]">
+            <div>
+                <img src="./sobir-img/HP-Omen-17_2.png" alt="" class="w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class=" my-[10px]">
+                <h1 class="font-bold text-[30px]">HP Omen 15-c0045ur</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p class="">✔ Processor: Intel Core i7-12700H (14 cores, up to 4.7GHz)</p>
+                <p class="">✔ Memory: 16GB DDR5 (upgradable to 32GB)</p>
+                <p class="">✔ Storage: 1TB PCIe NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$1,500</button>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="text-center">
+
+            <h1 class="font-bold text-[40px]">Gaming Mouse - Top Models for Players</h1>
+        </div>
+        <div class="md:flex justify-around my-[60px]">
+            <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/1_458.jpg" alt="" class=" rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/headerm.avif" alt="" class=" rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/ft-1.webp" alt="" class="md:h-[230px] md:w-[80%] rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="grid md:grid-rows-2 md:grid-cols-2 gap-[100px] m-[40px]">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок1.webp" alt="" class="rounded-xl">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$600</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок2.jpg" alt="" class="rounded-xl">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$50</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок3.jpg" alt="" class="rounded-xl h-[300px] w-[100%]">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$450</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок4.Yict9s9SYAMYZeIfljSypVEVTnxX7p9XEBmidKPZFnw" alt=""
+                    class="rounded-xl w-[100%] h-[300px]">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$600</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center my-[100px]">
+        <h1 class="font-bold text-[40px]">RIGHT KEYBOARD</h1>
+    </div>
+    <div class="grid md:grid-rows-2 md:grid-cols-4 xs:grid-rows-4 xs:grid-cols-2 px-[20px] my-[50px] gap-[30px] overflow-x-hidden">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./sobir-img/клв1.jpg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-K800</h1>
+
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="./sobir-img/kl3.jpg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-KR900</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <img src="./sobir-img/kl4.jpg" alt="">
+            <h1 class="font-bold text-[25px]">Zalman Z-Machine</h1>
+        </div>
+        <div data-aos="fade-left">
+            <img src="./sobir-img/kl5.jpg" alt="">
+            <h1 class=" font-bold text-[25px]">Zalman ZM-K900M</h1>
+
+        </div>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./sobir-img/клв2.jpeg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-KM800</h1>
+        </div>
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <img src="./sobir-img/Zalman Z-Machine.jpg" alt="">
+                <h1 class="font-bold text-[25px]">Zalman Z-Machine-9505S</h1>
+            </div>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="./sobir-img/kl7.jpg" alt="">
+                <h1 class="font-bold text-[25px] mt-[35px]">ZALMAN ZM-KR700</h1>
+            </div>
+            <div data-aos="fade-left">
+                <img src="./sobir-img/kl9.jpg" alt="">
+                <h1 class=" font-bold text-[25px] mt-[25px]">Zalman ZM-KS600M</h1>
     
+            </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
