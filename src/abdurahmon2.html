@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign up </title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    
+    <div class="h-[585px] bg-cover bg-center w-full" style="background-image: url(./abdurahmon.img/office.jpg!w700wp);">
+        <div class="ml-[25%] pt-[140px] md:ml-[45%]">
+            <input type="text" id="firstName" required placeholder="First name:" class="p-[5px] bg-[green] rounded-sm border-b-2 md:ml-[-100px] text-[white] border-[#27B674] md:w-[50%] my-[20px]"> <br>
+            <input type="text" id="secondName" required placeholder="Email:" class="p-[5px] rounded-sm border-b-2 md:ml-[-100px] border-[#27B674] md:w-[50%] my-[20px] text-white bg-[green]"> <br>
+            <input type="text" id="email" required placeholder="Password:" class="rounded-sm p-[5px] border-b-2 border-[#27B674] md:ml-[-100px] md:w-[50%] mb-[50px] my-[20px] text-white bg-[green]"> <br>
+            <a href="./abdurahmon.html"><button id="submitBtn" class="md:ml-[-20px] ml-[7%] w-[150px] md:w-[180px] bg-gradient-to-r from-green-500 to-blue-500 text-white p-4 rounded-lg">Submit</button></a>
+        </div>
+    </div>
+    
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", function (event) {
+        let firstName = document.getElementById("firstName");
+        let secondName = document.getElementById("secondName");
+        let email = document.getElementById("email");
+    
+        if (!firstName.value.trim()) {
+            alert("Заполните поле: First name");
+            firstName.focus();
+            return;
+        }
+    
+        if (!secondName.value.trim()) {
+            alert("Заполните поле: Second name");
+            secondName.focus();
+            return;
+        }
+    
+        if (!email.value.trim()) {
+            alert("Заполните поле: Email");
+            email.focus();
+            return;
+        }
+    
+        // Агар ҳама майдонҳо пур бошанд, паём нишон диҳад
+        alert("Форма успешно отправлена!");
+    
+        // Тоза кардани input-ҳо
+        firstName.value = "";
+        secondName.value = "";
+        email.value = "";
+    });
+        </script>
+
+</body>
+</html>
