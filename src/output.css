@@ -1494,6 +1494,26 @@ video {
   padding-top: 6rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-28 {
+  padding-left: 7rem;
+}
+
+.pl-40 {
+  padding-left: 10rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-48 {
+  padding-left: 12rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2231,6 +2251,11 @@ video {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:pt-28 {
