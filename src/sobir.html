@@ -1,14 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
 
-</div>
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="md:flex justify-around  py-[10px] text-white">
+        <div class="xs:mx-[25%] md:mx-[0px]">
+            <img src="./sobir-img/718281.png" alt="" class="w-[200px]">
+        </div>
+        <div class="md:flex gap-[40px] xs:hidden">
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">About </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">Gallery</p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer">Pricing </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer"> FAQ </p>
+            <p class="my-auto hover:text-blue-300 hover:cursor-pointer"> Benefits</p>
+            <div
+                class="p-5 my-auto overflow-hidden w-[60px] h-[60px] hover:w-[270px] bg-[#4070f4] shadow-[2px_2px_20px_rgba(0,0,0,0.08)] rounded-full flex group items-center hover:duration-300 duration-300">
+                <div class="flex items-center justify-center fill-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode"
+                        viewBox="0 0 24 24" width="22" height="22">
+                        <path
+                            d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z">
+                        </path>
+                    </svg>
+                </div>
+                <input type="text" class="outline-none text-[20px] bg-transparent w-full text-white font-normal px-4" />
+            </div>
+
+            <div class="my-auto">
+                <button
+                    class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                    See more
+                </button>
+            </div>
+        </div>
+        <div class="xs:flex gap-[30px] md:hidden ml-[30px]">
+             <div class="my-auto text-[30px]">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div
+            class="p-5 my-auto overflow-hidden w-[60px] h-[60px] hover:w-[270px] bg-[#4070f4] shadow-[2px_2px_20px_rgba(0,0,0,0.08)] rounded-full flex group items-center hover:duration-300 duration-300">
+            <div class="flex items-center justify-center fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode"
+                    viewBox="0 0 24 24" width="22" height="22">
+                    <path
+                        d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z">
+                    </path>
+                </svg>
+            </div>
+            <input type="text" class="outline-none text-[20px] bg-transparent w-full text-white font-normal px-4" />
+        </div>
+           
+        </div>
+    </div>
+    <div class="grid md:grid-rows-2 md:grid-cols-4 xs:grid-rows-4 xs:grid-cols-2 gap-[30px] xs:mx-[20px] md:mx-[30px] my-[30px]">
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./sobir.html" class="font-bold">Sobir</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./rahmatjon.html" class="font-bold">Rahmatjon</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./abdurahmon2.html" class="font-bold">Abdurahmon</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./sabrina.html" class="font-bold">Sabrina</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./karim.html" class="font-bold">Karim</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./mahmud.html" class="font-bold">Mahmud</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./Muhammad.html" class="font-bold">Muhammad</a>
+        </div>
+        <div class="w-[150px] text-center p-[5px] border-2 border-[#6E38F7] rounded-[40px]">
+            <a href="./abdulloh.html" class="font-bold">Abdullo</a>
+        </div>
+    </div>
+    <img src="./sobir-img/клв1.jpg" alt="" class="absolute -z-10 xs:h-[450px] md:h-[400px] w-[100%] mt-[30px]">
+    <div class="text-center my-[60px] md:py-[55px] xs:py-[20px] bg-[#2b1ea75b]">
+        <h1 class="font-bold text-[25px] my-[10px]">This website helps you buy high-quality computers at affordable
+            prices!</h1>
+        <p>We offer everything you need to find the perfect computer for your needs:</p>
+        <h1 class="font-bold text-[25px] my-[10px]">Our Products:</h1>
+        <p>💻 Laptops – From budget-friendly models to powerful gaming rigs</p>
+        <p>🖱️ Accessories – Keyboards, mice, monitors, and more</p>
+        <h1 class="font-bold text-[25px] my-[10px]">Limited-Time Offers!</h1>
+        <p>🎁 Exclusive Discounts for first-time buyers</p>
+        <p>🔒 100% Satisfaction Guarantee with easy returns</p>
+    </div>
+    <div class="md:flex justify-center gap-[50px]">
+        <div data-aos="zoom-in" class="my-auto">
+            <div>
+                <img src="./sobir-img/images (1).jpg" alt="" class=" w-[500px] rounded-xl bg-black">
+                <h1 class="font-bold mt-[40px] text-[20px] ml-[20px]">Legion 7i (RTX 4080, i9) – 2500–3000$</h1>
+                <button
+                class="w-[200px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">NEXT ></button>
+            </div>
+        </div>
+        <div class="md:w-[40%] px-[20px] my-[60px]">
+
+            <div class="text-center my-[20px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Lenovo LEGION Overview</h1>
+                <p class="text-gray-500"> <span class="font-bold text-white">LEGION</span> is Lenovo's premium gaming
+                    brand, offering high-performance laptops, desktops, and accessories designed for gamers, content
+                    creators, and power users.</p>
+            </div>
+            <h1 class="font-bold text-[20px]">🔥 LEGION Product Lineup</h1>
+            <h1 class="font-bold">1. LEGION Laptops</h1>
+            <h1 class="font-bold">LEGION 7 / 7i (Pro)</h1>
+            <p class="text-gray-500">Premium gaming & creator laptops</p>
+            <p class="text-gray-500">Intel Core i9 / AMD Ryzen 9 + RTX 4080/4090</p>
+            <p class="text-gray-500">Mini-LED or OLED displays (up to 240Hz)</p>
+            <p class="text-gray-500">Advanced cooling (vapor chamber)</p>
+            <h1 class="font-bold">LEGION 9i (Flagship)</h1>
+            <p class="text-gray-500">Lenovo’s most powerful laptop</p>
+            <p class="text-gray-500">RTX 4090, mechanical keyboard, liquid cooling</p>
+
+        </div>
+    </div>
+    <div class="md:flex justify-center gap-[40px] my-[30px]">
+        <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[40%] px-[10px]">
+            <div>
+                <img src="./sobir-img/images (2).jpg" alt="" class=" w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class="w-[150px] mx-auto my-[10px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Laptop gaming Lenovo Legion R9000P</h1>
+                <p class="font-bold my-[5px]">✔ Unmatched gaming performance (Highest FPS in AAA titles)</p>
+                <p class="font-bold my-[5px]">✔ Premium build quality with Legion Spectrum RGB lighting</p>
+                <p class="font-bold my-[5px]">✔ Easy-upgrade design for future-proofing</p>
+                <button
+                    class="w-[200px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$3,500</button>
+
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[40%] px-[10px]">
+            <div>
+                <img src="./sobir-img/c08907028.png" alt="" class="w-[60%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class="w-[150px] mx-auto my-[10px]">
+                <h1 class="font-bold text-[25px] my-[10px]">Victus by HP 16.1 inch Gaming Laptop</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p>✔ Processor: Intel Core i5-12450H or AMD Ryzen 5 5600H</p>
+                <p>✔ Graphics: NVIDIA GeForce RTX 3050 (4GB GDDR6)</p>
+                <p>✔ Storage: 512GB NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$800</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="md:flex justify-center">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="md:w-[40%] my-[50px]">
+            <div>
+                <img src="./sobir-img/HP-Omen-16-b0036ur-3.webp" alt="" class="w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class=" my-[10px]">
+                <h1 class="font-bold text-[30px]">HP Omen 16-c0045ur</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p class="">✔ Processor: Intel Core i7-12700H (14 cores, up to 4.7GHz)</p>
+                <p class="">✔ Memory: 16GB DDR5 (upgradable to 32GB)</p>
+                <p class="">✔ Storage: 1TB PCIe NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$1,800</button>
+
+            </div>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="md:w-[40%] my-[50px]">
+            <div>
+                <img src="./sobir-img/HP-Omen-17_2.png" alt="" class="w-[80%] mx-auto">
+                <img src="./sobir-img/Stars.svg" alt="" class=" my-[10px]">
+                <h1 class="font-bold text-[30px]">HP Omen 15-c0045ur</h1>
+                <h1 class="font-bold text-[22px]">💻 Core Specifications:</h1>
+                <p class="">✔ Processor: Intel Core i7-12700H (14 cores, up to 4.7GHz)</p>
+                <p class="">✔ Memory: 16GB DDR5 (upgradable to 32GB)</p>
+                <p class="">✔ Storage: 1TB PCIe NVMe SSD</p>
+                <button
+                    class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                    ~$1,500</button>
+
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="text-center my-[40px]">
+        <button
+        class="w-[300px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">NEXT ></button>
+    </div>
+    <div>
+        <div class="text-center">
+
+            <h1 class="font-bold text-[40px]">Gaming Mouse - Top Models for Players</h1>
+        </div>
+        <div class="text-blue-600 md:flex justify-around my-[60px]">
+            <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/1_458.jpg" alt="" class=" rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/headerm.avif" alt="" class=" rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000" class="md:w-[25%] px-[10px] my-[20px]">
+                <div>
+                    <img src="./sobir-img/ft-1.webp" alt="" class="md:h-[230px] md:w-[80%] rounded-xl">
+                    <H1 class="font-bold text-[30px]">Gaming Mice</H1>
+                    <P>Вес: 63г</P>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$150</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="text-center my-[40px]">
+        <button
+        class="w-[300px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">NEXT ></button>
+    </div>
+    <div data-aos="zoom-in" class="my-[100px] text-center">
+        <h1 class="font-bold text-[40px]">SYSTEM BLOCK</h1>
+    </div>
+    <div class="grid md:grid-rows-2 md:grid-cols-2 gap-[100px] m-[40px]">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок1.webp" alt="" class="rounded-xl">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$600</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок2.jpg" alt="" class="rounded-xl">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$50</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок3.jpg" alt="" class="rounded-xl h-[300px] w-[100%]">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$450</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="  rounded-xl">
+                <img src="./sobir-img/блок4.Yict9s9SYAMYZeIfljSypVEVTnxX7p9XEBmidKPZFnw" alt=""
+                    class="rounded-xl w-[100%] h-[300px]">
+                <div class="p-[20px]">
+                    <h1 class="font-bold text-[30px]">Key Features of EUROPC</h1>
+                    <p class="font-bold">Centralized Database – Collects data on packaging types, materials, and
+                        compliance with environmental laws.</p>
+                    <p class="font-bold">Blockchain Technology (if implemented) – Ensures data security and process
+                        transparency.</p>
+                    <button
+                        class="w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                        ~$600</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="text-center my-[40px]">
+        <button
+        class="w-[300px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">NEXT ></button>
+    </div>
+    <div class="text-center my-[100px]">
+        <h1 class="font-bold text-[40px]">RIGHT KEYBOARD</h1>
+    </div>
+    <div
+        class="text-blue-600 grid md:grid-rows-2 md:grid-cols-4 xs:grid-rows-4 xs:grid-cols-2 px-[20px] my-[50px] gap-[40px] overflow-x-hidden">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./sobir-img/клв1.jpg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-K800</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$100</button>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="./sobir-img/kl3.jpg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-KR900</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$90</button>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <img src="./sobir-img/kl4.jpg" alt="">
+            <h1 class="font-bold text-[25px]">Zalman Z-Machine</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$150</button>
+        </div>
+        <div data-aos="fade-left">
+            <img src="./sobir-img/kl5.jpg" alt="">
+            <h1 class=" font-bold text-[25px]">Zalman ZM-K900M</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$60</button>
+        </div>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./sobir-img/клв2.jpeg" alt="">
+            <h1 class="font-bold text-[25px]">ZALMAN ZM-KM800</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$200</button>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <img src="./sobir-img/Zalman Z-Machine.jpg" alt="">
+            <h1 class="font-bold text-[25px]">Zalman Z-Machine-95S</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$120</button>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="./sobir-img/kl7.jpg" alt="">
+            <h1 class="font-bold text-[25px] mt-[35px]">ZALMAN ZM-KR700</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$95</button>
+        </div>
+        <div data-aos="fade-left">
+            <img src="./sobir-img/kl9.jpg" alt="">
+            <h1 class=" font-bold text-[25px] mt-[25px]">Zalman ZM-KS600M</h1>
+            <button
+                class="md:w-[200px] my-[10px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">Price
+                ~$150</button>
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="text-center my-[40px]">
+        <button
+        class="w-[300px] mt-[30px] bg-gradient-to-br from-pink-800 to-purple-500 p-[10px] bg-[#6966FF] text-white rounded-xl ">NEXT ></button>
+    </div>
+    <div>
+        <img src="./sobir-img/718281.png" alt="" class="w-[100%] h-[300px]">
+    </div>
+
+    <footer class="md:flex justify-around">
+        <div>
+            <div class="flex items-center my-[20px] px-[20px]">
+                <div
+                  class="flex flex-col justify-center items-center  text-white rounded-lg shadow-lg p-6 w-80"
+                >
+                  <h2 class="text-2xl font-bold mb-4 text-center">Welcome!</h2>
+                  <p class="mb-4 text-center">
+                    Thanks for visiting our website. Stay connected with us on social media.
+                  </p>
+                  <div class="flex space-x-4">
+                    <a
+                      class="text-blue-500 hover:text-blue-400 transition duration-200"
+                      href="#"
+                    >
+                      <svg
+                        viewBox="0 0 64 64"
+                        height="60"
+                        width="60"
+                        y="0px"
+                        x="0px"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <linearGradient
+                          spreadMethod="reflect"
+                          gradientUnits="userSpaceOnUse"
+                          y2="56.878"
+                          y1="14.5"
+                          x2="37.646"
+                          x1="37.646"
+                          id="JOZq0V4XPxMzNaLCE5XPGa_44003_gr1"
+                        >
+                          <stop stop-color="#6dc7ff" offset="0"></stop>
+                          <stop stop-color="#e6abff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M42,56V38h5.358l0.934-8H42v-4.457c0-2.097-0.131-3.527,2.877-3.527L48,22.014v-6.479 c-1-0.088-2.487-0.285-5.136-0.285c-5.531,0-8.864,3.376-8.864,9.576V30h-7v8h7v18H42z"
+                          fill="url(#JOZq0V4XPxMzNaLCE5XPGa_44003_gr1)"
+                        ></path>
+                        <linearGradient
+                          spreadMethod="reflect"
+                          gradientUnits="userSpaceOnUse"
+                          y2="58.017"
+                          y1="6.833"
+                          x2="32"
+                          x1="32"
+                          id="JOZq0V4XPxMzNaLCE5XPGb_44003_gr2"
+                        >
+                          <stop stop-color="#1a6dff" offset="0"></stop>
+                          <stop stop-color="#c822ff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M50,57H14c-3.859,0-7-3.141-7-7V14c0-3.859,3.141-7,7-7h36c3.859,0,7,3.141,7,7v36 C57,53.859,53.859,57,50,57z M14,9c-2.757,0-5,2.243-5,5v36c0,2.757,2.243,5,5,5h36c2.757,0,5-2.243,5-5V14c0-2.757-2.243-5-5-5H14z"
+                          fill="url(#JOZq0V4XPxMzNaLCE5XPGb_44003_gr2)"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      class="text-blue-400 hover:text-blue-300 transition duration-200"
+                      href="#"
+                    >
+                      <svg
+                        viewBox="0 0 64 64"
+                        height="60"
+                        width="60"
+                        y="0px"
+                        x="0px"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <linearGradient
+                          gradientUnits="userSpaceOnUse"
+                          y2="52.195"
+                          y1="9.936"
+                          x2="32"
+                          x1="32"
+                          id="iS8U25XJCb2VBQOwbuAcra_bYzsf9Bmocst_gr1"
+                        >
+                          <stop stop-color="#1a6dff" offset="0"></stop>
+                          <stop stop-color="#c822ff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M57.595,16.086c-0.286-0.341-0.762-0.45-1.17-0.271c-0.614,0.271-1.245,0.512-1.891,0.719 c0.824-1.035,1.462-2.216,1.874-3.491c0.127-0.396-0.002-0.827-0.326-1.087c-0.324-0.261-0.774-0.295-1.131-0.083 c-1.777,1.041-3.672,1.788-5.641,2.223C47.244,12.122,44.449,11,41.555,11c-6.169,0-11.189,4.978-11.189,11.097 c0,0.404,0.022,0.81,0.067,1.214c-7.41-0.705-14.289-4.343-19.027-10.103c-0.207-0.252-0.518-0.385-0.85-0.362 c-0.325,0.025-0.618,0.207-0.784,0.488c-0.993,1.679-1.519,3.613-1.519,5.593c0,2.447,0.807,4.78,2.247,6.68 c-0.292-0.123-0.579-0.26-0.859-0.412c-0.311-0.167-0.686-0.161-0.988,0.021c-0.303,0.181-0.488,0.507-0.488,0.859v0.119 c0,3.708,1.868,7.073,4.786,9.104c-0.012-0.002-0.024-0.005-0.036-0.007c-0.35-0.065-0.699,0.062-0.93,0.327 c-0.231,0.265-0.306,0.631-0.198,0.966c1.182,3.648,4.149,6.371,7.769,7.332c-3.003,1.771-6.401,2.697-9.957,2.697 c-0.786,0-1.563-0.046-2.308-0.137c-0.467-0.059-0.906,0.218-1.063,0.657c-0.157,0.44,0.012,0.931,0.407,1.181 C11.478,51.38,17.064,53,22.79,53c18.772,0,29.989-15.119,29.989-29.736c0-0.271-0.005-0.541-0.014-0.81 c1.907-1.423,3.552-3.159,4.896-5.169C57.908,16.915,57.881,16.427,57.595,16.086z M51.167,21.143 c-0.279,0.197-0.438,0.523-0.422,0.865c0.02,0.415,0.034,0.834,0.034,1.256C50.779,36.897,40.31,51,22.79,51 c-3.982,0-7.894-0.84-11.499-2.452c4.226-0.321,8.198-1.85,11.575-4.468c0.335-0.26,0.47-0.702,0.336-1.104 s-0.506-0.677-0.93-0.686c-3.381-0.065-6.404-1.952-7.948-4.835c1.115,0.038,2.203-0.099,3.276-0.393 c0.447-0.123,0.751-0.537,0.735-1c-0.017-0.464-0.35-0.854-0.804-0.945c-3.773-0.752-6.632-3.773-7.244-7.449 c1.122,0.403,2.297,0.631,3.468,0.667c0.459,0.011,0.848-0.271,0.983-0.696c0.136-0.426-0.027-0.89-0.399-1.137 c-2.558-1.698-4.084-4.53-4.084-7.575c0-1.135,0.21-2.25,0.614-3.287c5.319,5.827,12.784,9.361,20.714,9.76 c0.328,0.022,0.617-0.116,0.817-0.357c0.202-0.241,0.278-0.563,0.207-0.868c-0.16-0.685-0.24-1.384-0.24-2.077 c0-5.016,4.122-9.097,9.189-9.097c2.537,0,4.979,1.047,6.7,2.871c0.235,0.248,0.581,0.359,0.917,0.296 c1.385-0.267,2.739-0.671,4.048-1.209c-0.729,1.007-1.665,1.865-2.759,2.514c-0.407,0.242-0.589,0.735-0.436,1.184 c0.153,0.447,0.597,0.73,1.068,0.669c0.952-0.117,1.886-0.292,2.797-0.525C53.06,19.666,52.15,20.449,51.167,21.143z"
+                          fill="url(#iS8U25XJCb2VBQOwbuAcra_bYzsf9Bmocst_gr1)"
+                        ></path>
+                        <linearGradient
+                          gradientUnits="userSpaceOnUse"
+                          y2="52.195"
+                          y1="9.936"
+                          x2="38.903"
+                          x1="38.903"
+                          id="iS8U25XJCb2VBQOwbuAcrb_bYzsf9Bmocst_gr2"
+                        >
+                          <stop stop-color="#1a6dff" offset="0"></stop>
+                          <stop stop-color="#c822ff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M30.772,45.786l0.621,1.9c7.123-2.326,12.824-7.914,15.642-15.33l-1.869-0.711 C43.636,35.671,39.733,42.859,30.772,45.786z"
+                          fill="url(#iS8U25XJCb2VBQOwbuAcrb_bYzsf9Bmocst_gr2)"
+                        ></path>
+                        <g>
+                          <linearGradient
+                            gradientUnits="userSpaceOnUse"
+                            y2="21.528"
+                            y1="17.979"
+                            x2="42"
+                            x1="42"
+                            id="iS8U25XJCb2VBQOwbuAcrc_bYzsf9Bmocst_gr3"
+                          >
+                            <stop stop-color="#6dc7ff" offset="0"></stop>
+                            <stop stop-color="#e6abff" offset="1"></stop>
+                          </linearGradient>
+                          <circle
+                            fill="url(#iS8U25XJCb2VBQOwbuAcrc_bYzsf9Bmocst_gr3)"
+                            r="2"
+                            cy="20"
+                            cx="42"
+                          ></circle>
+                        </g>
+                      </svg>
+                    </a>
+                    <a
+                      class="text-blue-400 hover:text-blue-300 transition duration-200"
+                      href="#"
+                    >
+                      <svg
+                        viewBox="0 0 64 64"
+                        height="60"
+                        width="60"
+                        y="0px"
+                        x="0px"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <linearGradient
+                          spreadMethod="reflect"
+                          gradientUnits="userSpaceOnUse"
+                          y2="54.751"
+                          y1="10"
+                          x2="32"
+                          x1="32"
+                          id="PMWUiMSnUf2R_PPJ6rqZea_44112_gr1"
+                        >
+                          <stop stop-color="#1a6dff" offset="0"></stop>
+                          <stop stop-color="#c822ff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M32,53.001c-6.358,0-12.716-0.195-19.299-0.584c-4.96-0.293-8.961-4.242-9.308-9.187 c-0.521-7.452-0.521-15.009-0.001-22.46c0.348-4.945,4.349-8.895,9.309-9.188c13.167-0.778,25.433-0.778,38.598,0 c4.96,0.293,8.961,4.242,9.308,9.187c0.521,7.452,0.521,15.009,0.001,22.46c-0.348,4.945-4.349,8.895-9.309,9.188l0,0 C44.716,52.806,38.358,53.001,32,53.001z M51.182,50.421l0.059,0.998L51.182,50.421c3.959-0.234,7.153-3.386,7.431-7.331 c0.515-7.358,0.515-14.821-0.001-22.181c-0.276-3.944-3.471-7.096-7.43-7.33c-13.088-0.773-25.275-0.773-38.363,0 c-3.959,0.234-7.153,3.386-7.431,7.331c-0.515,7.358-0.515,14.821,0.001,22.181c0.276,3.944,3.471,7.096,7.43,7.33 C25.906,51.194,38.094,51.194,51.182,50.421z"
+                          fill="url(#PMWUiMSnUf2R_PPJ6rqZea_44112_gr1)"
+                        ></path>
+                        <linearGradient
+                          spreadMethod="reflect"
+                          gradientUnits="userSpaceOnUse"
+                          y2="39.252"
+                          y1="24.25"
+                          x2="31.72"
+                          x1="31.72"
+                          id="PMWUiMSnUf2R_PPJ6rqZeb_44112_gr2"
+                        >
+                          <stop stop-color="#6dc7ff" offset="0"></stop>
+                          <stop stop-color="#e6abff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M25 39.84L25 24.16 38.44 32z"
+                          fill="url(#PMWUiMSnUf2R_PPJ6rqZeb_44112_gr2)"
+                        ></path>
+                        <linearGradient
+                          spreadMethod="reflect"
+                          gradientUnits="userSpaceOnUse"
+                          y2="54.751"
+                          y1="10"
+                          x2="32.212"
+                          x1="32.212"
+                          id="PMWUiMSnUf2R_PPJ6rqZec_44112_gr3"
+                        >
+                          <stop stop-color="#1a6dff" offset="0"></stop>
+                          <stop stop-color="#c822ff" offset="1"></stop>
+                        </linearGradient>
+                        <path
+                          d="M24,41.581V22.419L40.425,32L24,41.581z M26,25.901v12.197L36.456,32L26,25.901z"
+                          fill="url(#PMWUiMSnUf2R_PPJ6rqZec_44112_gr3)"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+              
+                  <button
+                    class="bg-gradient-to-r mt-4 from-blue-500 to-pink-500 text-white font-bold py-2 px-4 rounded-full animate-pulse"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="my-[20px] px-[20px]">
+            <p class="my-[10px]">Pricing</p>
+            <p class="my-[10px]">Teams</p>
+            <p class="my-[10px]">Education</p>
+            <p class="my-[10px]">Refer a friend</p>
+            <p class="my-[10px]">Updates</p>
+        </div>
+        <div class="my-[20px] px-[20px]">
+            <p> <i class="fa-solid fa-location-dot"></i> 1772 Nevskaya Street NW, Suite 21389,<br> Atlanta, GA 902344</p><BR></BR>
+            <a href="" class="my-[20px]"><i class="fa-solid fa-phone-volume"></i> +1 789 123456</a><BR>
+            <a href="" class="my-[20px]"><i class="fa-solid fa-envelope"></i> hello@containers.kit</a><br>
+        </div>
+
+        <div class="my-[20px] px-[20px]">
+            <p class="my-[15px] font-bold text-[25px]">Receive special offers and  get <br> our latest updates.</p>
+            <input type="email" placeholder="Enter e-mail" class="border-2 border-[#6E38F7] p-[8px] bg-black rounded-lg">
+            <button class="border-2 border-[#6E38F7] text-[#6E38F7] p-[8px] w-[140px] rounded-lg">Join</button>
+        </div>
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
+
 </html>
